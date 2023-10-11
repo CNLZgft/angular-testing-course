@@ -132,7 +132,7 @@ describe("HomeComponent", () => {
   }));
 
   //waitForAsync() se usa para los test con llamadas HTTP
-  fit("should display advanced courses when tab clicked w/waitForAsync()", waitForAsync(() => {
+  it("should display advanced courses when tab clicked w/waitForAsync()", waitForAsync(() => {
     coursesService.findAllCourses.and.returnValue(of(setupCourses()));
 
     fixture.detectChanges();
