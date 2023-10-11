@@ -81,3 +81,8 @@ describe("Home Page", () => {
 //e2e --> start-server-and-test build-and-start:prod http://localhost:4200 cypress:run --> de esta manera
 //se preparan los test e2e de Cypress para ser deployados en integración continua
 
+//usaremos Travis CI como proveedor. Se tiene que configurar el fichero ".travis.yml"
+//importante la parte del script, donde se deberá poner el script e2e
+//script:
+//- npm run e2e
+//una vez tengamos los proyectos visibles en travisCI, se le da a "Trigger a build"
